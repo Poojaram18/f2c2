@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<style>
+  table{
+    border-collapse: collapse;
+ border: 3px solid white ;
+width: 80%;
+  }
+#new_name{
+margin-left:20px;
+}
+/* professional  here i indicated in country */
+#new_country{ 
+margin-left:10px;
+}
+#new_age{
+margin-left:30px;
+}
+form{
+  position: absolute;
+  left: 58px;
+  top: 105px;
+}
+*{
+  background-color:black;
+  color:white;
+  font-style: normal;
+  font-family: "Inter";
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+
+}
+#wrapper{
+  position: absolute;
+  margin-left:70px;
+  top: 346px;
+}
+.add{
+  background-color: white;
+  color: black;
+  width: 136px;
+  height: 58px;
+  left:80px;
+  position: absolute;
+}
+</style>
+<div>
+<form onclick="change">
+  
+<!-- Name:<input type="text" id="new_name"> professional:<input type="text" id="new_country">Age:<input type="number" id="new_age"> -->
+<label for="nameInput">&emsp;Enter Name &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</label>
+<label for="professionInput">Enter Profession&emsp;&emsp;&emsp;&emsp;&emsp; </label>
+<label for="ageInput">&emsp;Enter Age</label><br><br>
+
+<input type="text" id="new_name">
+<input type="text" id="new_country">
+<input type="number" id="new_age">
+<br><br>
+
+<input type="button" class="add" onclick="add_row();" onclick="myFunction()"  value="Add User">
+
+</form>
+</div> 
+<br>
+
+
+<div id="wrapper">
+<table align='center' cellspacing=5 cellpadding=5 id="data_table" border=1 >
+<tr>
+  <!-- <th>id no</th> -->
+<th>Name</th>
+<th>professional</th>
+<th>Age</th>
+</tr>
+</table>
+</div>
+</body>
+</html>
